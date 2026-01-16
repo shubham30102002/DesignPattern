@@ -1,0 +1,161 @@
+📌 Four Pillars of OOPs – Interview Notes
+1️⃣ Encapsulation
+Definition
+
+Encapsulation is the process of wrapping data (variables) and methods into a single unit and restricting direct access to the data.
+
+Key Idea
+
+Protect data and control access
+
+Why it is needed
+
+Prevents unauthorized access
+
+Ensures data integrity
+
+Allows validation before modification
+
+How it is achieved
+
+Using access modifiers (private, public, protected)
+
+Providing controlled access via methods
+
+Real-life example
+
+Car engine is hidden; driver uses pedals and steering
+
+Advantages
+
+Data security
+
+Loose coupling
+
+Better maintainability
+
+Easy debugging
+
+Interview One-liner
+
+Encapsulation hides internal data and exposes behavior in a controlled manner.
+
+2️⃣ Abstraction
+Definition
+
+Abstraction means showing only essential features and hiding implementation details.
+
+Key Idea
+
+What an object does, not how it does it
+
+Why it is needed
+
+Reduces complexity
+
+Improves readability
+
+Allows focus on high-level design
+
+How it is achieved
+
+Using interfaces
+
+Using abstract classes
+
+Real-life example
+
+Driving a car without knowing engine mechanics
+
+Advantages
+
+Simplifies system design
+
+Enhances scalability
+
+Promotes loose coupling
+
+Interview One-liner
+
+Abstraction focuses on exposing behavior while hiding internal logic.
+
+3️⃣ Inheritance
+Definition
+
+Inheritance allows a class to acquire properties and behavior of another class.
+
+Key Idea
+
+Reusability and hierarchy
+
+Why it is needed
+
+Avoids code duplication
+
+Promotes reuse
+
+Establishes parent-child relationship
+
+Types of inheritance
+
+Single
+
+Multilevel
+
+Hierarchical
+(Multiple inheritance is supported via interfaces in Java)
+
+Real-life example
+
+Car → Electric Car → Tesla
+
+Advantages
+
+Code reusability
+
+Easy maintenance
+
+Logical structure
+
+Interview One-liner
+
+Inheritance allows one class to reuse the functionality of another.
+
+4️⃣ Polymorphism
+Definition
+
+Polymorphism means one interface, many implementations.
+
+Key Idea
+
+Same action, different behavior
+
+Types
+
+Compile-time Polymorphism
+
+Method overloading
+
+Runtime Polymorphism
+
+Method overriding
+
+Why it is needed
+
+Flexibility
+
+Dynamic behavior
+
+Scalability
+
+Real-life example
+
+Brake pedal: works differently in different cars
+
+Advantages
+
+Improves extensibility
+
+Reduces dependency
+
+Supports dynamic binding
