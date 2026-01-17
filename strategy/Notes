@@ -1,0 +1,146 @@
+Below are the MOST FREQUENTLY ASKED INTERVIEW QUESTIONS on the Strategy Design Pattern, with crisp, interviewer-approved answers.
+These are exactly the questions asked in Java / Spring / System Design rounds.
+
+⭐ Strategy Design Pattern – Interview Questions & Answers
+1️⃣ What is the Strategy Design Pattern?
+
+Answer:
+
+Strategy pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime without modifying the client.
+
+2️⃣ When should you use the Strategy Pattern?
+
+Answer:
+
+When there are multiple ways to perform an operation
+
+When behavior must change at runtime
+
+When you want to avoid large if-else or switch statements
+
+When adding new behavior should not modify existing code
+
+3️⃣ What problem does Strategy Pattern solve?
+
+Answer:
+
+It removes conditional logic by delegating behavior to separate strategy classes.
+
+4️⃣ What are the main components of Strategy Pattern?
+
+Answer:
+
+Strategy (interface)
+
+Concrete Strategy (implementation)
+
+Context (uses strategy)
+
+5️⃣ Strategy vs State Pattern (VERY COMMON ❗)
+
+Answer:
+
+Strategy	State
+Behavior chosen by client	Behavior changes internally
+Focus on algorithms	Focus on state
+Client aware of strategy	Client unaware of state
+
+One-liner:
+
+Strategy decides how to do something, State decides what state it is in.
+
+6️⃣ How does Strategy follow SOLID principles?
+
+Answer:
+
+OCP: New strategies added without modifying existing code
+
+SRP: Each strategy has one responsibility
+
+DIP: Context depends on abstraction, not concrete class
+
+7️⃣ How is Strategy better than inheritance?
+
+Answer:
+
+Strategy uses composition, allowing runtime behavior changes, whereas inheritance fixes behavior at compile time.
+
+8️⃣ What are the disadvantages of Strategy Pattern?
+
+Answer:
+
+Increases number of classes
+
+Client must know which strategy to use
+
+Slightly more complex design
+
+9️⃣ How is Strategy Pattern implemented in Spring Boot?
+
+Answer:
+
+Using interfaces + multiple implementations
+
+Spring injects correct strategy using:
+
+@Qualifier
+
+@Primary
+
+Factory pattern
+
+🔟 Real-world example of Strategy Pattern?
+
+Answer:
+
+Payment methods (UPI, Card, Net Banking)
+
+Sorting algorithms
+
+Compression (ZIP, RAR)
+
+Authentication providers in Spring Security
+
+1️⃣1️⃣ How does Strategy differ from Factory Pattern?
+
+Answer:
+
+Strategy	Factory
+Changes behavior	Creates object
+Runtime behavior selection	Object creation logic
+Focus on algorithms	Focus on instantiation
+1️⃣2️⃣ Can Strategy Pattern violate LSP?
+
+Answer:
+
+No, if strategies adhere to the same interface contract. Violation occurs only if implementations change expected behavior.
+
+1️⃣3️⃣ Can Strategy Pattern be combined with other patterns?
+
+Answer:
+✔ Yes
+Common combinations:
+
+Strategy + Factory
+
+Strategy + Singleton
+
+Strategy + Template Method
+
+1️⃣4️⃣ Why is Strategy preferred over switch-case?
+
+Answer:
+
+Because switch-case violates Open–Closed Principle and becomes difficult to maintain as logic grows.
+
+1️⃣5️⃣ How do you choose a strategy at runtime?
+
+Answer:
+
+User input
+
+Configuration
+
+Database value
+
+Dependency Injection (Spring)
