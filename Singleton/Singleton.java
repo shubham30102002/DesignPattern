@@ -6,7 +6,7 @@ public class Singleton implements Cloneable{
 	private Singleton() {
 		
 	}
-	
+	// clone method creates a new object that replicates all the current attributes and state of the original
 	@Override
 	public Singleton clone() {
 		return new Singleton();
